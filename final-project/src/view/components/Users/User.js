@@ -1,15 +1,15 @@
 import React from 'react'
 
-const Footer = (props) => {
+const User = (props) => {
 
     return (
-        <nav><div class="footer-copyright">
-            <div class="container">
-                © 2019 Copyright Text
-        </div>
-        </div></nav>
+        <li>
+            <h2> 1 korisnik </h2>
+            <p>JEdan mrtvi korisnik  JEdan mrtvi korisnik   JEdan mrtvi korisnik JEdan mrtvi korisnik JEdan mrtvi korisnik    JEdan mrtvi korisnik JEdan mrtvi korisnik </p>
+
+        </li>
 
     )
 }
 
-export default Footer
+export default User

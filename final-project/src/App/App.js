@@ -5,6 +5,7 @@ import Main from '../view/components/HomePage/Main'
 import Footer from '../view/components/Footer'
 import SignIn from '../view/components/SignForms/SignIn'
 import SignUp from '../view/components/SignForms/SignUp'
+import UserList from '../view/components/Users/UserList'
 import {
   BrowseRouter as Router,
   Switch,
@@ -22,6 +23,8 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' component={SignUp} />
           <Route exact path='/SignIn' component={SignIn} />
+          <Route exact path='/UserList' component={UserList} />
+
         </Switch>
         <Footer />
       </div>

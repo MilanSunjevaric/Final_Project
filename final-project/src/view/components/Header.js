@@ -10,7 +10,7 @@ const Header = (props) => {
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
 
                     <li><Link to='/'>Home</Link></li>
-                    <li>About</li>
+                    <li><Link to='/UserList'>About</Link></li>
                 </ul>
             </div>
         </nav>
