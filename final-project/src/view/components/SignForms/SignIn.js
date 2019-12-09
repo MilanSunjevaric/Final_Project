@@ -1,45 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Input from '../Users/Input'
+import Button from '../Users/Button'
 
-const SignIn = (props) => {
-
+class SignIn extends React.Component {
+  render() {
     return (
+      <>
+        <Input label="Email" inputType="email" inputId="Email4" />
+        <Input inputName="Password" inputType="password" inputID="password" placeholder="Password*" />
+        <Button buttonName="Sign In" />
 
-        <div>
-           <form>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4">Email</label>
-      <input type="email" class="form-control" id="inputEmail4"/>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputPassword4">Password</label>
-      <input type="password" class="form-control" id="inputPassword4"/>
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="inputAddress">First Name</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St"/>
-  </div>
-  <div class="form-group">
-    <label for="inputAddress2">Last Name</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor"/>
-  </div>
-  <div class="form-row">
-  </div>
-  <div class="form-group">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="gridCheck"/>
-      <label class="form-check-label" for="gridCheck">
-        Check me out
-      </label>
-    </div>
-  </div>
-  <button type="submit" class="btn btn-primary">Sign in</button>
-</form>
-        </div>
+      </>
+
+
 
     )
+  }
 }
 
 export default SignIn
