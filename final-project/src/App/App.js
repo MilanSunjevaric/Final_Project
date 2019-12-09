@@ -16,7 +16,7 @@ import {
 } from 'react-router-dom'
 
 import Cards from '../view/components/Card/Cards';
-import Button from '../view/components/Users/Button'
+import Button from '../view/Button/Button'
 
 
 
@@ -26,9 +26,11 @@ class App extends React.Component {
       <div>
         <Header />
         <Switch>
-          <Route exact path='/' component={SignUp} />
-          <Route exact path='/SignIn' component={SignIn} />
+          <Route exact path='/SignUp' component={SignUp} />
+          <Route exact path='/' component={SignIn} />
           <Route exact path='/UserList' component={UserList} />
+
+
 
         </Switch>
         <Footer />

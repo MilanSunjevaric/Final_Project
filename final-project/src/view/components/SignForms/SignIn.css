@@ -1,0 +1,22 @@
+.Sign-in-title{
+text-align: center;
+margin-top: 2em;
+font-size: 3em;
+}
+.signin-form {
+    width: 500px;
+    margin-top: 5em;
+}
+
+.btn{
+    margin: 0 auto;
+    display: block;
+    background-color: #ee6e73;
+}
+
+.btn:hover{
+    background-color: 	#DCDCDC;
+}
+.spantwo{
+    margin-left: 30%;
+}

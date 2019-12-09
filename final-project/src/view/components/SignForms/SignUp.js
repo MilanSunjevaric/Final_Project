@@ -5,6 +5,7 @@ import Button from '../Users/Button'
 import CheckBox from '../CheckBox/CheckBox'
 import { Link } from 'react-router-dom'
 
+
 class SignUp extends React.Component {
   render() {
     return (
@@ -24,3 +25,6 @@ class SignUp extends React.Component {
   }
 }
 export default SignUp
+
+
+
