@@ -13,9 +13,9 @@ class SignUp extends React.Component {
       <div>
         <h1 class="sign-up-naslov">Sign Up</h1>
         <div class="signup-form container">
-          <form class="" method="get">
+          <form class="forma" method="get">
 
-            <Input placeholder="First Name*" inputType="text" inputClass />
+            <Input placeholder="First Name*" inputType="text" inputClass="placeholder" />
             <Input placeholder="Last Name*" inputType="text" />
             <Input placeholder="Email Address*" inputType="email" />
             <Input placeholder="Password*" inputType="password" />
