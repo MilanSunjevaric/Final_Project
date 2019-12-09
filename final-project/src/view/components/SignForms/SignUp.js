@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Input from '../Users/Input'
-import Button from '../Users/Button'
+import Input from '../../Input/Input'
+import Button from '../../Button/Button'
 
 class SignUp extends React.Component {
   render() {
@@ -17,3 +17,6 @@ class SignUp extends React.Component {
   }
 }
 export default SignUp
+
+
+

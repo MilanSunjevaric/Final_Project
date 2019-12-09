@@ -7,7 +7,7 @@ const CheckBox = (props) => {
         <p>
             <label>
                 <input type="checkbox" name={props.name} value={props.value} />
-                <span>Red</span>
+                <span>{props.here}</span>
             </label>
         </p>
     )
