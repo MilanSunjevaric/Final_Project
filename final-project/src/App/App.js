@@ -31,16 +31,6 @@ class App extends React.Component {
           <Route exact path='/UserList' component={UserList} />
 
         </Switch>
-
-        <CheckBox name="mateja" value="mateja" />
-
-        <Cards>
-          <Card image='https://carlisletheacarlisletheatre.org/images/javascript-logo-small-6.png' title='Naslov JavaScript' body='Paragraf paragraf paragraf' author='Pera MIka' />
-          <Card image='https://carlisletheacarlisletheatre.org/images/javascript-logo-small-6.png' title='Naslov JavaScript' body='Paragraf paragraf paragraf' author='Pera MIka' />
-          <Card image='https://carlisletheacarlisletheatre.org/images/javascript-logo-small-6.png' title='Naslov JavaScript' body='Paragraf paragraf paragraf' author='Pera MIka' />
-        </Cards>
-
-
         <Footer />
       </div>
     )
