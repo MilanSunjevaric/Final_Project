@@ -27,7 +27,7 @@ class App extends React.Component {
         <Header />
         <Switch>
           <Route exact path='/SignUp' component={SignUp} />
-          <Route exact path='/' component={SignIn} />
+          <Route exact path='/SignIn' component={SignIn} />
           <Route exact path='/UserList' component={UserList} />
 
 

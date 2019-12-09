@@ -7,7 +7,7 @@ const Input = (props) => {
             <div class="form-group col-md-6">
                 <label >
                     {props.label}
-                    <input type={props.inputType} class="form-control" id={props.inputId} placeholder={props.placeholder} />
+                    <input type={props.inputType} class={props.inputClass} id={props.inputId} placeholder={props.placeholder} />
                 </label>
             </div>
         </div>
