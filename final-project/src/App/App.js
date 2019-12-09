@@ -6,12 +6,15 @@ import Footer from '../view/components/Footer'
 import SignIn from '../view/components/SignForms/SignIn'
 import SignUp from '../view/components/SignForms/SignUp'
 import UserList from '../view/components/Users/UserList'
+import Card from '../view/components/Card/Card'
+import CheckBox from '../view/components/CheckBox/CheckBox'
 import {
   BrowseRouter as Router,
   Switch,
   Route,
   Link
 } from 'react-router-dom'
+import Cards from '../view/components/Card/Cards';
 
 
 
@@ -26,6 +29,14 @@ class App extends React.Component {
           <Route exact path='/UserList' component={UserList} />
 
         </Switch>
+        <CheckBox name="mateja" value="mateja" />
+
+        <Cards>
+          <Card image='https://carlisletheacarlisletheatre.org/images/javascript-logo-small-6.png' title='Naslov JavaScript' body='Paragraf paragraf paragraf' author='Pera MIka' />
+          <Card image='https://carlisletheacarlisletheatre.org/images/javascript-logo-small-6.png' title='Naslov JavaScript' body='Paragraf paragraf paragraf' author='Pera MIka' />
+          <Card image='https://carlisletheacarlisletheatre.org/images/javascript-logo-small-6.png' title='Naslov JavaScript' body='Paragraf paragraf paragraf' author='Pera MIka' />
+        </Cards>
+
         <Footer />
       </div>
     )
