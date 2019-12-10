@@ -1,12 +1,11 @@
 import React from 'react'
+import Posts from "../Posts/Posts"
 
 const Main = (props) => {
 
     return (
 
-        <div>
-            <h1>Ovo nam je Main</h1>
-        </div>
+        <Posts />
 
     )
 }
