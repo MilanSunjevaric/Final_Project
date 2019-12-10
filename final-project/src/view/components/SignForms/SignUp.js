@@ -21,17 +21,26 @@ class SignUp extends React.Component {
     }
 
   }
+  reset = () => {
+    this.setState({ error: "" })
+
+  }
+
   getFirstName = (n) => {
     this.setState({ firstName: n })
+    this.reset()
   }
   getLastName = (n) => {
     this.setState({ lastName: n })
+    this.reset()
   }
   getEmail = (n) => {
     this.setState({ email: n })
+    this.reset()
   }
   getPassword = (n) => {
     this.setState({ password: n })
+    this.reset()
   }
   getCheck = (n) => {
     this.setState({ check: n })
