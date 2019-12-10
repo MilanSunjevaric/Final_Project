@@ -49,6 +49,7 @@ class SignUp extends React.Component {
     http.post('/auth/register', data)
       .then((res) => {
 
+        this.props.history.push('/SignIn')
 
       })
       .catch((rej) => {
@@ -71,7 +72,6 @@ class SignUp extends React.Component {
             <Input placeholder="Email Address*" inputType="email" onChange={this.getEmail} />
             <Input placeholder="Password*" inputType="password" onChange={this.getPassword} />
             <CheckBox onChange={this.getCheck} here="I want to receive inspiration,marketing , promotions and updates via email." />
-
             <Button buttonName="Sign Up" onClick={this.postSignUpData} />
             <span><Link to='/SignIn'>Don't have an account? Sign up</Link></span>
           </form>
