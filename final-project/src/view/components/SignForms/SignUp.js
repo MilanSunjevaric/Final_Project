@@ -41,12 +41,14 @@ class SignUp extends React.Component {
       <div>
         <h1 class="sign-up-naslov">Sign Up</h1>
         <div class="signup-form container">
+
           <form>
             <Input placeholder="First Name*" inputType="text" onChange={this.getFirstName} />
             <Input placeholder="Last Name*" inputType="text" onChange={this.getLastName} />
             <Input placeholder="Email Address*" inputType="email" onChange={this.getEmail} />
             <Input placeholder="Password*" inputType="password" onChange={this.getPassword} />
             <CheckBox onChange={this.getCheck} here="I want to receive inspiration,marketing , promotions and updates via email." />
+
             <Button buttonName="Sign Up" />
             <span><Link to='/SignIn'>Don't have an account? Sign up</Link></span>
           </form>
