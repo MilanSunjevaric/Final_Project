@@ -6,7 +6,8 @@ import Button from '../../Button/Button'
 import Checkbox from '../CheckBox/CheckBox'
 import "../SignForms/SignIn.css"
 import { http } from '../../../Services/HttpService'
-import { Redirect } from 'react-router'
+
+
 
 
 class SignIn extends React.Component {
@@ -22,12 +23,17 @@ class SignIn extends React.Component {
     }
 
   }
+  reset = () => {
+    this.setState({ error: '' })
+  }
 
   getEmail = (n) => {
+    this.reset()
     this.setState({ email: n })
   }
 
   getPassword = (n) => {
+    this.reset()
     this.setState({ password: n })
   }
 
@@ -43,6 +49,8 @@ class SignIn extends React.Component {
       password: this.state.password
     }
 
+
+
     http.post('/auth/login', data)
       .then((res) => {
 
@@ -56,6 +64,7 @@ class SignIn extends React.Component {
         console.log(rej);
 
       })
+
   }
 
 
