@@ -6,6 +6,7 @@ import Button from '../../Button/Button'
 import Checkbox from '../CheckBox/CheckBox'
 import "../SignForms/SignIn.css"
 import { http } from '../../../Services/HttpService'
+import { Redirect } from 'react-router'
 
 
 class SignIn extends React.Component {
@@ -14,7 +15,9 @@ class SignIn extends React.Component {
     this.state = {
       email: "",
       password: "",
-      check: false
+      error: '',
+      check: false,
+
 
     }
 
@@ -33,8 +36,8 @@ class SignIn extends React.Component {
   }
 
   postSignInData = (e) => {
-
     e.preventDefault()
+
     const data = {
       email: this.state.email,
       password: this.state.password
@@ -42,21 +45,28 @@ class SignIn extends React.Component {
 
     http.post('/auth/login', data)
       .then((res) => {
+
+        this.props.history.push('/UserList')
+
         console.log(res);
 
       })
       .catch((rej) => {
+        this.setState({ error: rej.response.data.message })
         console.log(rej);
+
       })
   }
 
 
   render() {
+
     return (
       <div>
         <h1 className="Sign-in-title">Sign in</h1>
         <div class="signin-form container">
           <form className="" method="post">
+            <div><p>{this.state.error} <br /></p></div>
             <Input inputType="email" inputId="Email4" placeholder="Email" onChange={this.getEmail} />
             <Input inputName="Password" inputType="password" inputID="password" placeholder="Password*" onChange={this.getPassword} />
             <Checkbox here="Remember me" onChange={this.getCheck}></Checkbox>
@@ -75,13 +85,3 @@ class SignIn extends React.Component {
 export default SignIn
 
 
-{/* <div class="signup-form">
-<form class="" action="index.html" method="post">
-  <h1>Sign Up</h1>
-  <input type="text" placeholder="Full Name" class="txtb">
-  <input type="email" placeholder="Email" class="txtb">
-  <input type="password" placeholder="Password" class="txtb">
-  <input type="submit" value="Create Account" class="signup-btn">
-  <a href="#">Already Have one ?</a>
-</form>
-</div> */}

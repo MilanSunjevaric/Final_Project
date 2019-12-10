@@ -5,6 +5,7 @@ const Input = (props) => {
     const onChangeHandler = (e) => {
         props.onChange(e.target.value)
     }
+
     return (
         <div class="form-row" >
             <div class="form-group col-md-6">

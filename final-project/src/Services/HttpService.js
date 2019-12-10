@@ -13,6 +13,7 @@ class HttpService {
 
         return instance.post(path, data)     // metoda post vraca promis
     }
+
 }
 
 export const http = new HttpService();
