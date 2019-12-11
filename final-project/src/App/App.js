@@ -5,6 +5,7 @@ import Main from '../view/components/HomePage/Main'
 import Footer from '../view/components/Footer'
 import SignIn from '../view/components/SignForms/SignIn'
 import SignUp from '../view/components/SignForms/SignUp'
+import Dashboard from '../view/components/Dashboard/Dashboard'
 import UserList from '../view/components/Users/UserList'
 import Card from '../view/components/Card/Card'
 import CheckBox from '../view/components/CheckBox/CheckBox'
@@ -29,7 +30,7 @@ class App extends React.Component {
           <Route exact path='/' component={SignIn} />
           <Route exact path='/SignUp' component={SignUp} />
           <Route exact path='/SignIn' component={SignIn} />
-          <Route exact path='/UserList' component={UserList} />
+          <Route exact path='/dashboard' component={Dashboard} />
 
 
 

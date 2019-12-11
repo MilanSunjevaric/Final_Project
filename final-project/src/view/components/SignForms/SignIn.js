@@ -46,7 +46,7 @@ class SignIn extends React.Component {
     http.post('/auth/login', data)
       .then((res) => {
 
-        this.props.history.push('/UserList')
+        this.props.history.push('/dashboard')
 
         console.log(res);
 
