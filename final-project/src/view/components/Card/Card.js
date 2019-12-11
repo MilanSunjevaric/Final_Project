@@ -24,7 +24,7 @@ const Card = (props) => {
                 </div>
                 <div>
                     Author name:
-                    {/* <UserList /> */}
+                    <Author userId={props.userId} />
                 </div>
             </div>
         </div>

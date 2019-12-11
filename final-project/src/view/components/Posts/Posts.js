@@ -28,7 +28,7 @@ class Posts extends React.Component {
 
         return (<div className="main-div">
             {this.state.posts.map((post) => {
-                return <Card src={post.imageUrl} title={post.title} text={post.text} />
+                return <Card src={post.imageUrl} title={post.title} text={post.text} userId={post.id} />
             })}
         </div>)
 
