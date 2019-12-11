@@ -1,12 +1,11 @@
 import React from 'react'
 
+
 const User = (props) => {
 
     return (
         <li>
-            <h2> 1 korisnik </h2>
-            <p>JEdan mrtvi korisnik  JEdan mrtvi korisnik   JEdan mrtvi korisnik JEdan mrtvi korisnik JEdan mrtvi korisnik    JEdan mrtvi korisnik JEdan mrtvi korisnik </p>
-
+            <h2>Author name:  {props.name} </h2>
         </li>
 
     )

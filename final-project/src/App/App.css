@@ -89,3 +89,10 @@
   background: rgba(0,0,0,.3);
 }
 
+.card-image{
+  width: 20%;
+}
+
+.card-content{
+  width: 20%;
+}

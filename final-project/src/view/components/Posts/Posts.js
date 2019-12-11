@@ -18,7 +18,8 @@ class Posts extends React.Component {
     }
     getPosts = () => {
         http.get('/posts')
-            .then(res => this.setState({ posts: res.data })
+            .then(res =>
+                this.setState({ posts: res.data })
             )
     }
 
@@ -27,7 +28,7 @@ class Posts extends React.Component {
 
         return (<div className="main-div">
             {this.state.posts.map((post) => {
-                return <Card src={post.imageUrl} title={post.tittle} text={post.text} />
+                return <Card src={post.imageUrl} title={post.title} text={post.text} />
             })}
         </div>)
 
