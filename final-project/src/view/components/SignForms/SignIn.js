@@ -56,12 +56,12 @@ class SignIn extends React.Component {
 
         this.props.history.push('/UserList')
 
-        console.log(res);
+        //console.log(res);
 
       })
       .catch((rej) => {
         this.setState({ error: rej.response.data.message })
-        console.log(rej);
+        //console.log(rej);
 
       })
 

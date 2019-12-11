@@ -8,6 +8,7 @@ import SignUp from '../view/components/SignForms/SignUp'
 import UserList from '../view/components/Users/UserList'
 import Card from '../view/components/Card/Card'
 import CheckBox from '../view/components/CheckBox/CheckBox'
+import Posts from '../view/components/Posts/Posts'
 import {
   BrowseRouter as Router,
   Switch,
@@ -26,7 +27,7 @@ class App extends React.Component {
       <div>
         <Header />
         <Switch>
-          <Route exact path='/' component={SignIn} />
+          <Route exact path='/' component={Posts} />
           <Route exact path='/SignUp' component={SignUp} />
           <Route exact path='/SignIn' component={SignIn} />
           <Route exact path='/UserList' component={UserList} />
