@@ -97,4 +97,17 @@
   width: 20%;
 }
 
+.dashboard{
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.dash{
+  padding: 30px;
+  font-size: 2em;
+  text-align: center;
+}
+
+
 

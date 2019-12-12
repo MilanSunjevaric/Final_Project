@@ -6,6 +6,7 @@ import Button from '../../Button/Button'
 import Checkbox from '../CheckBox/CheckBox'
 import "../SignForms/SignIn.css"
 import { http } from '../../../Services/HttpService'
+import { longStackSupport } from 'q'
 
 
 
@@ -41,6 +42,10 @@ class SignIn extends React.Component {
     this.setState({ check: n })
   }
 
+  logout = () => {
+    localStorage.clear('jwtToken');
+    this.props.history.push('/')
+  }
 
 
   postSignInData = (e) => {
@@ -54,9 +59,13 @@ class SignIn extends React.Component {
 
 
     http.post('/auth/login', data)
-      .then((res) => {
 
+      .then((res) => {
+        this.logout()
+        localStorage.setItem('jwtToken', res.data.accessToken)
         this.props.history.push('/dashboard')
+
+
 
         //console.log(res);
 
@@ -66,6 +75,8 @@ class SignIn extends React.Component {
         //console.log(rej);
 
       })
+
+
 
   }
 

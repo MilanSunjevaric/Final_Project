@@ -25,9 +25,11 @@ import Button from '../view/Button/Button'
 class App extends React.Component {
   render() {
     return (
+
       <div>
         <Header />
         <Switch>
+
           <Route exact path='/' component={Posts} />
           <Route exact path='/SignUp' component={SignUp} />
           <Route exact path='/SignIn' component={SignIn} />

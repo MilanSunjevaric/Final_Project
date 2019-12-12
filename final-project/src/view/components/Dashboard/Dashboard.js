@@ -7,7 +7,7 @@ import TotalUsers from './Users'
 
 const Dashboard = () => {
     return (
-        <div>
+        <div className="dashboard">
             <TotalPosts />
             <TotalCom />
             <TotalUsers />
@@ -17,3 +17,6 @@ const Dashboard = () => {
 
 
 export default Dashboard
+
+
+
