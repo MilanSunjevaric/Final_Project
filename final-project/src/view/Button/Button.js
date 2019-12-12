@@ -13,4 +13,4 @@ const Button = (props) => {
 
     )
 }
-export default Buttongit
+export default Button
