@@ -10,10 +10,16 @@ class TotalUsers extends React.Component {
             users: []
         }
     }
-    getPost = () => {
+
+    componentDidMount() {
+        this.getUsers()
+    }
+    getUsers = () => {
         http.get('/users')
             .then(res => this.setState({ users: res.data }))
     }
+
+
 
     render() {
         return (

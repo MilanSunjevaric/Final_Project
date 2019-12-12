@@ -6,14 +6,21 @@ import { http } from '../../../Services/HttpService'
 class TotalCom extends React.Component {
     constructor(props) {
         super(props)
+
         this.state = {
             comments: []
         }
     }
 
+    componentDidMount() {
+        this.getComments()
+    }
+
     getComments = () => {
         http.get('/comments')
-            .then(res => this.setState({ comments: res.data }))
+            .then(res =>
+                // console.log(res))
+                this.setState({ comments: res.data }))
     }
 
     render() {

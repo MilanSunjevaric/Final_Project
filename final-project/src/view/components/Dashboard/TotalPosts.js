@@ -13,10 +13,13 @@ class TotalPosts extends React.Component {
 
     }
 
+    componentDidMount() {
+        this.getPost()
+    }
 
     getPost = () => {
         http.get('/posts')
-            .then(res => this.setState({ posts: res }))
+            .then(res => this.setState({ posts: res.data }))
 
     }
 
