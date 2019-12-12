@@ -1,8 +1,9 @@
 import axios from 'axios'
 
-class UserService {
 
-    get(path) {
+class AuthorService {
+
+    get() {
         const instance = axios.create({
             baseURL: 'http://crud-api.hypetech.xyz/v1/users',
             headers: {
@@ -11,7 +12,7 @@ class UserService {
             }
         })
 
-        return instance.get(path)     // metoda post vraca promis
+        return instance.get()     // metoda post vraca promis
     }
 
 
@@ -19,4 +20,4 @@ class UserService {
 
 }
 
-export const http = new UserService();
+export const authorService = new AuthorService();

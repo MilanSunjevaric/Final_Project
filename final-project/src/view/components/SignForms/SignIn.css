@@ -12,6 +12,8 @@ font-size: 3em;
     margin: 0 auto;
     display: block;
     background-color: #ee6e73;
+    width: 100%;
+
 }
 
 .btn:hover{
@@ -19,4 +21,8 @@ font-size: 3em;
 }
 .spantwo{
     margin-left: 30%;
+}
+.error-msg{
+    text-align: center;
+    color: red;
 }
