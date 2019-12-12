@@ -10,10 +10,10 @@ const Footer = (props) => {
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     © 2019 Copyright Text
 
-                    <li><Link to='/SignIn'>Sign In</Link></li>
+                    <li className="billx"><Link to='/SignIn'>Sign In</Link></li>
                 </ul>
             </div>
-        </nav>
+        </nav >
 
     )
 }

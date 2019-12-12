@@ -41,6 +41,8 @@ class SignIn extends React.Component {
     this.setState({ check: n })
   }
 
+
+
   postSignInData = (e) => {
     e.preventDefault()
 
@@ -68,6 +70,7 @@ class SignIn extends React.Component {
   }
 
 
+
   render() {
 
     return (
@@ -75,7 +78,7 @@ class SignIn extends React.Component {
         <h1 className="Sign-in-title">Sign in</h1>
         <div class="signin-form container">
           <form className="" method="post">
-            <div><p>{this.state.error} <br /></p></div>
+            <div id="mydiv"><p className="error-msg">{this.state.error} <br /></p></div>
             <Input inputType="email" inputId="Email4" placeholder="Email" onChange={this.getEmail} />
             <Input inputName="Password" inputType="password" inputID="password" placeholder="Password*" onChange={this.getPassword} />
             <Checkbox here="Remember me" onChange={this.getCheck}></Checkbox>
